@@ -1,0 +1,918 @@
+{
+  "attractions": [
+    {
+      "name": "부전시장",
+      "latitude": 35.1633105,
+      "longitude": 129.061034,
+      "description": "부전시장은 부산 동해선 광역전철의 부전역 인근에 위치한 전통시장으로, 다양한 신선한 식재료와 지역 특산물을 저렴한 가격에 구매할 수 있는 곳입니다. 이곳에서는 부산의 맛을 느낄 수 있는 다양한 먹거리와 함께, 소규모 상점들이 모여 있어 쇼핑의 즐거움을 만끽할 수 있습니다. 요리 동호회나 미식 취미를 가진 사람들에게는 신선한 재료를 구입해 새로운 요리를 시도해보는 재미를 제공하며, 사진 동호회 회원들에게는 시장의 활기찬 풍경을 담을 수 있는 좋은 촬영 장소가 될 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "부전역",
+          "distance": 97
+        }
+      ],
+      "image_url": "https://i.namu.wiki/i/6G5kcNX9OLGAkBImficWy4UJ67ophEOCmIMdUiIdv07w34U4ttAb2c_jT67sx5UrFCAQwcqAYzuWKkNKf9urZA.webp",
+      "activities": [
+        "식재료 구매",
+        "먹거리 탐방",
+        "사진 촬영"
+      ]
+    },
+    {
+      "name": "부산시민공원",
+      "latitude": 35.1681608,
+      "longitude": 129.0573853,
+      "description": "부산시민공원은 부산의 중심부에 위치한 넓고 쾌적한 공원으로, 다양한 문화와 여가활동을 즐길 수 있는 장소입니다. 공원 내에는 산책로와 자전거 도로가 잘 갖춰져 있어 걷기나 자전거 타기를 즐기기에 좋으며, 야외 공연장에서는 주말마다 다양한 공연과 이벤트가 열립니다. 또한, 사진 동호회나 자연을 사랑하는 사람들이 아름다운 풍경을 배경으로 촬영을 하기에 안성맞춤인 장소입니다.",
+      "near_stations": [
+        {
+          "station": "부전역",
+          "distance": 537
+        }
+      ],
+      "image_url": "https://www.visitbusan.net/uploadImgs/files/cntnts/20191227194943122_oen",
+      "activities": [
+        "걷기",
+        "자전거 타기",
+        "공연 관람"
+      ]
+    },
+    {
+      "name": "서면역",
+      "latitude": 35.15781570000001,
+      "longitude": 129.0600331,
+      "description": "서면역은 부산의 주요 교통 허브 중 하나로, 다양한 상업 및 문화 시설이 밀집해 있어 쇼핑과 여가를 즐기기에 최적의 장소입니다. 이곳에서는 다양한 음식점과 카페, 영화관 등이 있어 친구나 가족과 함께 즐거운 시간을 보낼 수 있습니다. 또한, 사진 촬영 동호회나 미식회 같은 취미 활동을 하는 사람들에게도 다양한 테마의 장소와 맛집 탐방 기회를 제공합니다.",
+      "near_stations": [
+        {
+          "station": "부전역",
+          "distance": 693
+        }
+      ],
+      "image_url": "https://i.namu.wiki/i/IfWx8VMCj9NljNFQ2IWIhuFB-f8IkztE9VqzvhKTUHaFOB9djcth5q7_01xGbBnJT6HXNhBPmzMxKMIxGWYqCg.webp",
+      "activities": [
+        "쇼핑",
+        "음식 탐방",
+        "영화 관람"
+      ]
+    },
+    {
+      "name": "전포카페거리",
+      "latitude": 35.1554021,
+      "longitude": 129.0638741,
+      "description": "전포카페거리는 부산의 부전역 근처에 위치한 트렌디한 카페 거리로, 다양한 개성 넘치는 카페와 맛집들이 즐비해 있습니다. 이곳은 커피 애호가들이나 디저트를 사랑하는 사람들이 모여 새로운 맛을 탐험하기에 최적의 장소입니다. 또한, 거리 곳곳의 독특한 인테리어와 아트 갤러리들은 사진 촬영을 즐기는 사람들에게도 매력적인 배경을 제공합니다.",
+      "near_stations": [
+        {
+          "station": "부전역",
+          "distance": 1010
+        }
+      ],
+      "image_url": "http://www.busan.go.kr/comm/getFile?srvcId=ARTICLE&upperNo=65509&fileTy=IMG&fileNo=1",
+      "activities": [
+        "카페 탐방",
+        "디저트 맛보기",
+        "사진 촬영"
+      ]
+    },
+    {
+      "name": "사직 야구장",
+      "latitude": 35.1940316,
+      "longitude": 129.0615183,
+      "description": "사직 야구장은 부산에 위치한 대표적인 야구 경기장으로, 롯데 자이언츠의 홈구장입니다. 이곳에서는 프로 야구 경기를 관람하며 팀을 응원할 수 있으며, 야구 팬들에게는 뜨거운 응원의 열기를 느낄 수 있는 장소입니다. 또한, 경기 외에도 야구 관련 동호회 모임이나 팬 미팅 등의 활동이 이루어질 수 있어 야구를 좋아하는 사람들이 함께 모여 소통할 수 있는 훌륭한 장소입니다.",
+      "near_stations": [
+        {
+          "station": "거제역",
+          "distance": 1278
+        }
+      ],
+      "image_url": "https://i.namu.wiki/i/NL5pacRk8hKJcQC2icPEbxYCZezIYmAxWefEClXyDJHrFDkAprskk-0tukfG-vANIWfFBwmuPfivn3hBKjSaEQ.webp",
+      "activities": [
+        "프로 야구 경기 관람",
+        "팀 응원",
+        "팬 미팅 참여"
+      ]
+    },
+    {
+      "name": "부산아시아드 주경기장",
+      "latitude": 35.1899786,
+      "longitude": 129.0582686,
+      "description": "부산아시아드 주경기장은 부산 동해선 광역전철의 거제역 근처에 위치한 대규모 스포츠 시설로, 다양한 스포츠 경기와 문화 행사가 열리는 곳입니다. 이곳에서는 축구 경기 관람을 비롯해 조깅이나 산책을 즐길 수 있는 넓은 공간이 마련되어 있어 운동 동호회나 스포츠 애호가들에게 적합합니다. 또한, 인근에는 다양한 편의시설과 카페가 있어 경기나 활동 후 휴식을 취하기에도 좋은 장소입니다.",
+      "near_stations": [
+        {
+          "station": "거제해맞이역",
+          "distance": 1376
+        },
+        {
+          "station": "거제역",
+          "distance": 1429
+        }
+      ],
+      "image_url": "https://i.namu.wiki/i/88J_VsZ1HP98_cIRWrRnO0_PP-ALr5Btmt2J3C0T6r9q3JbDcr0xRDGU6i_Ny0_6k6WpBXKuNUHsIn34Fnr2Rg.webp",
+      "activities": [
+        "축구 경기 관람",
+        "조깅",
+        "산책"
+      ]
+    },
+    {
+      "name": "충렬사",
+      "latitude": 35.2012629,
+      "longitude": 129.096005,
+      "description": "충렬사는 부산 동해선 광역전철의 동래역 인근에 위치한 역사적인 사당으로, 임진왜란 당시 순국한 충신들을 기리기 위해 세워졌습니다. 이곳에서는 역사에 관심이 있는 사람들이 사당과 유적지를 둘러보며 한국의 전통과 역사를 배울 수 있습니다. 또한 주변의 아름다운 자연 경관을 즐기며 사진 촬영이나 산책을 즐기기에 좋습니다.",
+      "near_stations": [
+        {
+          "station": "동래역",
+          "distance": 621
+        },
+        {
+          "station": "안락역",
+          "distance": 632
+        }
+      ],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Chungryeolsa.jpg/800px-Chungryeolsa.jpg",
+      "activities": [
+        "역사 탐방",
+        "사진 촬영",
+        "산책"
+      ]
+    },
+    {
+      "name": "동래향교",
+      "latitude": 35.2077146,
+      "longitude": 129.0842035,
+      "description": "동래향교는 부산 동해선 광역전철의 동래역 인근에 위치한 유서 깊은 유교 교육기관입니다. 이곳에서는 전통 건축물과 정원이 어우러져 있어 역사와 문화에 관심이 있는 사람들이 방문하기에 좋습니다. 또한, 고즈넉한 분위기에서 사진 촬영을 하거나 조용한 산책을 즐길 수 있어 사진 동호회나 산책을 취미로 가진 사람들에게도 추천할 만한 장소입니다.",
+      "near_stations": [
+        {
+          "station": "동래역",
+          "distance": 1332
+        }
+      ],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%EB%8F%99%EB%9E%98%ED%96%A5%EA%B5%90_%EB%AA%85%EB%A5%9C%EB%8B%B9_Mykyta_K..jpg",
+      "activities": [
+        "역사 탐방",
+        "사진 촬영",
+        "산책"
+      ]
+    },
+    {
+      "name": "온천천 카페거리",
+      "latitude": 35.19158609999999,
+      "longitude": 129.1019612,
+      "description": "온천천 카페거리는 부산 동해선 광역전철의 안락역 근처에 위치한 매력적인 장소로, 다양한 카페와 맛집이 늘어서 있어 커피와 디저트를 즐기기에 최적의 장소입니다. 이 지역은 온천천을 따라 산책이나 자전거 타기를 즐길 수 있어, 사진 동호회나 자연을 좋아하는 사람들에게도 인기가 많습니다. 또한, 주말에는 플리마켓이나 다양한 문화 행사가 열려 취미 활동을 위한 새로운 기회를 제공합니다.",
+      "near_stations": [
+        {
+          "station": "안락역",
+          "distance": 630
+        }
+      ],
+      "image_url": "https://www.visitbusan.net/uploadImgs/files/cntnts/20191230171623256_oen",
+      "activities": [
+        "카페 탐방",
+        "산책",
+        "플리마켓 참여"
+      ]
+    },
+    {
+      "name": "수영강시민공원",
+      "latitude": 35.1931972,
+      "longitude": 129.1137153,
+      "description": "수영강시민공원은 부산 동해선 광역전철의 부산원동역 인근에 위치한 자연 친화적인 공간입니다. 이곳에서는 조깅이나 자전거 타기와 같은 야외 활동을 즐길 수 있으며, 넓은 잔디밭은 피크닉이나 가족 모임에 적합합니다. 또한, 공원 내에는 다양한 운동 시설과 산책로가 마련되어 있어 동호회나 취미를 가진 사람들이 모여 운동하거나 자연을 만끽하기에 좋은 장소입니다.",
+      "near_stations": [
+        {
+          "station": "부산원동역",
+          "distance": 71
+        }
+      ],
+      "image_url": "http://www.babytimes.co.kr/news/photo/201512/20151207113641_6234.jpg",
+      "activities": [
+        "조깅",
+        "자전거 타기",
+        "피크닉"
+      ]
+    },
+    {
+      "name": "APEC나루공원",
+      "latitude": 35.1706486,
+      "longitude": 129.1254273,
+      "description": "APEC나루공원은 부산 센텀역 인근에 위치한 아름다운 공원으로, 해운대와 수영강의 경치를 즐길 수 있는 최적의 장소입니다. 이곳에서는 조깅이나 사이클링을 즐기는 사람들이 많으며, 강변 산책로를 따라 여유롭게 걷거나 피크닉을 즐기기에도 좋습니다. 또한, 공원 내에는 다양한 레크리에이션 시설이 있어 가족 단위 방문객이나 사진 동호회 회원들이 자연을 배경으로 촬영을 하기에 최적입니다.",
+      "near_stations": [
+        {
+          "station": "벡스코역",
+          "distance": 714
+        }
+      ],
+      "image_url": "https://www.visitbusan.net/uploadImgs/files/cntnts/20191227204420832",
+      "activities": [
+        "조깅",
+        "사이클링",
+        "피크닉"
+      ]
+    },
+    {
+      "name": "신세계백화점 센텀시티점",
+      "latitude": 35.1689218,
+      "longitude": 129.1296311,
+      "description": "신세계백화점 센텀시티점은 세계 최대 규모의 백화점으로, 다양한 쇼핑과 문화 체험을 제공하는 복합 공간입니다. 이곳에서는 최신 패션 브랜드와 명품을 쇼핑할 수 있을 뿐만 아니라, 아이스링크, 영화관, 스파 등 다양한 레저 시설을 즐길 수 있습니다. 또한, 요리 클래스나 아트 갤러리 관람 같은 취미 활동도 가능하여 동호회 모임이나 여가 시간을 보내기에 적합한 장소입니다.",
+      "near_stations": [
+        {
+          "station": "벡스코역",
+          "distance": 468
+        }
+      ],
+      "image_url": "https://i.namu.wiki/i/uRAh-N8MXDIeQzBevIneGDBTIpZ4JLuqY2POyA-GmqdHcNUr_qjTmhwKcint-NK04dq2d03viq8CRT5cXtkKGA.webp",
+      "activities": [
+        "쇼핑",
+        "레저 시설 이용",
+        "취미 활동 참여"
+      ]
+    },
+    {
+      "name": "벡스코",
+      "latitude": 35.1689766,
+      "longitude": 129.1360411,
+      "description": "벡스코(BEXCO)는 부산의 대표적인 전시 및 컨벤션 센터로, 다양한 국제 전시회, 콘서트, 컨퍼런스 등이 열리는 장소입니다. 이곳에서는 최신 기술과 트렌드를 접할 수 있는 박람회나 문화 행사가 자주 개최되어, 관련 동호회나 취미를 가진 사람들이 새로운 정보를 얻거나 네트워킹을 할 수 있는 기회를 제공합니다. 또한, 인근에는 해운대 해수욕장과 같은 명소들이 있어 문화 체험과 여가 활동을 동시에 즐기기에 적합한 장소입니다.",
+      "near_stations": [
+        {
+          "station": "벡스코역",
+          "distance": 432
+        }
+      ],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Busan_BEXCO.jpg",
+      "activities": [
+        "전시 관람",
+        "콘서트 관람",
+        "컨퍼런스 참석"
+      ]
+    },
+    {
+      "name": "부산시립미술관",
+      "latitude": 35.1667411,
+      "longitude": 129.1370734,
+      "description": "부산시립미술관은 현대 미술 작품들을 감상할 수 있는 곳으로, 다양한 전시회와 문화 행사가 열려 예술 애호가들에게 풍부한 경험을 제공합니다. 미술관은 벡스코역 인근에 위치해 접근성이 좋으며, 주변에는 해운대 해수욕장과 같은 명소들이 있어 하루 종일 문화와 여가를 즐기기에 최적의 장소입니다. 미술 동호회나 취미로 그림을 그리는 사람들은 이곳에서 열리는 워크숍이나 강연에 참여해 예술적 영감을 얻을 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "벡스코역",
+          "distance": 690
+        }
+      ],
+      "image_url": "https://art.busan.go.kr/img/bma/s2_1_1_img01.jpg",
+      "activities": [
+        "전시 관람",
+        "워크숍 참여",
+        "문화 행사 참석"
+      ]
+    },
+    {
+      "name": "올림픽동산",
+      "latitude": 35.1648505,
+      "longitude": 129.1333409,
+      "description": "올림픽동산은 부산 동해선 광역전철 벡스코역 근처에 위치한 아름다운 공원으로, 다양한 레크리에이션 활동을 즐길 수 있는 장소입니다. 이곳은 조깅이나 산책을 즐기기에 최적의 환경을 제공하며, 가족 단위의 피크닉이나 친구들과의 배드민턴 경기를 위한 넓은 잔디밭도 마련되어 있습니다. 또한, 주변의 벡스코와 해운대 해변이 가까워 다양한 문화 및 해양 활동을 함께 즐길 수 있는 장점이 있습니다.",
+      "near_stations": [
+        {
+          "station": "벡스코역",
+          "distance": 799
+        }
+      ],
+      "image_url": "https://image.mycelebs.com/travel/new/ho/391365_ho_1499089160.jpg",
+      "activities": [
+        "조깅",
+        "피크닉",
+        "배드민턴"
+      ]
+    },
+    {
+      "name": "대천공원",
+      "latitude": 35.1811394,
+      "longitude": 129.167494,
+      "description": "대천공원은 부산 동해선 광역전철 신해운대역 인근에 위치한 자연 친화적인 공간입니다. 이 공원은 산책로와 자전거 도로가 잘 조성되어 있어 조깅이나 사이클링을 즐기는 동호회 멤버들에게 인기 있는 장소입니다. 또한, 넓은 잔디밭과 피크닉 테이블이 마련되어 있어 가족 단위 방문객들이나 친구들과 함께 피크닉을 즐기기에 안성맞춤입니다.",
+      "near_stations": [
+        {
+          "station": "신해운대역",
+          "distance": 846
+        }
+      ],
+      "image_url": "https://busan.grandculture.net/ImageView.aspx?fi=GC042P20982&t=middle&ext=jpg&iwm=1",
+      "activities": [
+        "산책",
+        "자전거 타기",
+        "피크닉"
+      ]
+    },
+    {
+      "name": "송정 해수욕장",
+      "latitude": 35.178614048185295,
+      "longitude": 129.19969081878662,
+      "description": "송정 해수욕장은 부산의 아름다운 해안선과 맑은 물로 유명한 해수욕장으로, 서핑을 즐기기에 최적의 장소입니다. 이곳은 초보자부터 숙련자까지 다양한 서핑 동호회가 활동하며, 서핑 강습도 받을 수 있어 많은 서퍼들에게 인기 있는 명소입니다. 또한, 해변을 따라 산책로와 카페들이 있어 여유롭게 바다를 감상하며 휴식을 취하기에도 좋습니다.",
+      "near_stations": [
+        {
+          "station": "송정역",
+          "distance": 1024
+        }
+      ],
+      "image_url": "https://www.visitbusan.net/uploadImgs/files/cntnts/20191225170315839_oen",
+      "activities": [
+        "서핑",
+        "산책",
+        "카페 탐방"
+      ]
+    },
+    {
+      "name": "해운대 블루라인 파크",
+      "latitude": 35.180894039777186,
+      "longitude": 129.20024871826172,
+      "description": "해운대 블루라인 파크는 부산의 아름다운 해안선을 따라 달리는 관광 열차로, 송정역 근처에 위치해 있습니다. 이곳에서는 해운대와 청사포, 미포를 연결하는 레일바이크를 타며 바다 풍경을 즐길 수 있어, 사진 촬영을 좋아하는 사람들에게도 인기가 많습니다. 또한, 주변에는 해양 스포츠를 즐길 수 있는 장소와 다양한 카페가 있어 동호회 모임이나 친구들과의 여유로운 시간을 보내기에 적합합니다.",
+      "near_stations": [
+        {
+          "station": "송정역",
+          "distance": 766
+        }
+      ],
+      "image_url": "https://www.bluelinepark.com/images/cont/goods03.jpg",
+      "activities": [
+        "레일바이크 타기",
+        "사진 촬영",
+        "해양 스포츠"
+      ]
+    },
+    {
+      "name": "죽도공원",
+      "latitude": 35.1801545,
+      "longitude": 129.2051442,
+      "description": "죽도공원은 부산 송정역 인근에 위치한 아름다운 해안 공원으로, 푸른 바다와 어우러진 자연 경관이 일품입니다. 이곳에서는 해안 산책로를 따라 걷거나 자전거를 타며 여유로운 시간을 보낼 수 있으며, 바다를 배경으로 한 사진 촬영도 인기가 많습니다. 서핑과 같은 해양 스포츠를 즐기기에도 적합하여 관련 동호회 활동을 위해 방문하는 사람들도 많습니다.",
+      "near_stations": [
+        {
+          "station": "송정역",
+          "distance": 860
+        }
+      ],
+      "image_url": "https://modo-phinf.pstatic.net/20151023_191/1445529905555MOwwv_JPEG/mosaZJV8Uz.jpeg?type=w720",
+      "activities": [
+        "걷기",
+        "자전거 타기",
+        "서핑"
+      ]
+    },
+    {
+      "name": "해동용궁사",
+      "latitude": 35.1883491,
+      "longitude": 129.2233197,
+      "description": "해동용궁사는 부산의 아름다운 해안 절경 위에 위치한 사찰로, 바다와 어우러진 독특한 풍경이 매력적입니다. 이곳에서는 일출을 감상하며 명상이나 사진 촬영을 즐길 수 있으며, 바다를 배경으로 한 산책로를 따라 걷거나 절에서 제공하는 다양한 문화 체험 프로그램에 참여할 수 있습니다. 특히, 사진 동호회나 자연을 사랑하는 취미를 가진 사람들에게는 이상적인 장소입니다.",
+      "near_stations": [
+        {
+          "station": "오시리아역",
+          "distance": 1545
+        }
+      ],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/%ED%95%B4%EB%8F%99%EC%9A%A9%EA%B6%81%EC%82%AC_%EC%82%AC%EC%B0%B0_%EC%A0%84%EA%B2%BD.jpg",
+      "activities": [
+        "일출 감상",
+        "사진 촬영",
+        "문화 체험"
+      ]
+    },
+    {
+      "name": "오시리아 해안산책로",
+      "latitude": 35.19643135602954,
+      "longitude": 129.22844409942627,
+      "description": "오시리아 해안산책로는 부산의 아름다운 해안선을 따라 조성된 산책로로, 오시리아역에서 쉽게 접근할 수 있습니다. 이곳에서는 바다를 바라보며 조깅이나 사이클링을 즐길 수 있으며, 사진 촬영을 좋아하는 사람들에게도 매력적인 장소입니다. 또한, 주변에는 다양한 카페와 레스토랑이 있어 산책 후에 여유롭게 휴식을 취하기에도 좋습니다.",
+      "near_stations": [
+        {
+          "station": "오시리아역",
+          "distance": 1719
+        }
+      ],
+      "image_url": "https://cdn.silvernetnews.com/news/photo/202308/43626_204789_212.jpg",
+      "activities": [
+        "조깅",
+        "사이클링",
+        "사진 촬영"
+      ]
+    },
+    {
+      "name": "국립수산과학관",
+      "latitude": 35.1934284,
+      "longitude": 129.2243149,
+      "description": "국립수산과학관은 부산 오시리아역 근처에 위치한 해양과 수산에 관한 다양한 전시와 교육 프로그램을 제공하는 장소입니다. 이곳에서는 해양 생태계와 수산자원에 대한 흥미로운 전시를 관람할 수 있으며, 특히 수중 생물에 대해 배우고 체험할 수 있는 기회가 많습니다. 해양 생물에 관심이 있는 동호회나 취미를 가진 사람들은 다양한 워크숍과 체험 프로그램에 참여하여 전문적인 지식을 쌓고, 해양 보호의 중요성을 배울 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "오시리아역",
+          "distance": 1386
+        }
+      ],
+      "image_url": "https://www.visitbusan.net/uploadImgs/files/cntnts/20191226102157995_oen",
+      "activities": [
+        "전시 관람",
+        "워크숍 참여",
+        "체험 프로그램"
+      ]
+    },
+    {
+      "name": "스카이라인 루지",
+      "latitude": 35.19437975879683,
+      "longitude": 129.22022581100464,
+      "description": "스카이라인 루지는 부산 동해선 광역전철 오시리아역 근처에 위치한 레저 시설로, 짜릿한 트랙을 따라 중력에 의해 내려오는 루지 카트를 체험할 수 있는 곳입니다. 가족이나 친구들과 함께 즐길 수 있는 다양한 트랙이 마련되어 있어 남녀노소 모두에게 인기 있으며, 주변의 아름다운 자연 경관을 감상하며 스릴 넘치는 주행을 경험할 수 있습니다. 또한, 루지 외에도 다양한 이벤트와 액티비티가 준비되어 있어 동호회나 취미 모임에서 특별한 하루를 보내기에 안성맞춤입니다.",
+      "near_stations": [
+        {
+          "station": "오시리아역",
+          "distance": 1000
+        }
+      ],
+      "image_url": "https://www.skylineluge.kr/_next/image/?url=https%3A%2F%2Fmedia.skyline.nz.beingbui.lt%2Fwayfinder-ko%2Fmedia%2Fuploads%2F2024%2F04%2F10093911%2FSkyline-Luge-Tongyeong-a-group-of-people-Luging_L.jpg&w=3840&q=75",
+      "activities": [
+        "루지 체험",
+        "자연 경관 감상",
+        "이벤트 참여"
+      ]
+    },
+    {
+      "name": "롯데월드 어드벤처 부산",
+      "latitude": 35.19625600786369,
+      "longitude": 129.2149257659912,
+      "description": "'롯데월드 어드벤처 부산'은 부산의 오시리아역 인근에 위치한 테마파크로, 다양한 놀이기구와 테마존을 통해 방문객들에게 즐거운 경험을 제공합니다. 이곳에서는 스릴 넘치는 롤러코스터와 가족들이 함께 즐길 수 있는 다양한 어트랙션을 체험할 수 있습니다. 또한, 동호회나 취미를 가진 사람들이 함께 참여할 수 있는 퍼레이드와 공연 같은 이벤트도 다양하게 마련되어 있어, 친구나 가족과 함께 특별한 하루를 보내기에 적합한 장소입니다.",
+      "near_stations": [
+        {
+          "station": "오시리아역",
+          "distance": 491
+        }
+      ],
+      "image_url": "https://adventurebusan.lotteworld.com/common/images/partnership-img1.jpg",
+      "activities": [
+        "놀이기구 체험",
+        "퍼레이드 관람",
+        "공연 관람"
+      ]
+    },
+    {
+      "name": "국립부산과학관",
+      "latitude": 35.2046875,
+      "longitude": 129.212689,
+      "description": "국립부산과학관은 부산 오시리아역 인근에 위치한 과학 체험 공간으로, 다양한 전시와 체험 프로그램을 통해 과학의 원리를 쉽게 이해할 수 있는 장소입니다. 이곳에서는 천문학 동호회나 로봇 공학에 관심 있는 사람들이 참여할 수 있는 워크숍과 강연이 열리며, 가족 단위 방문객들은 상설 전시관에서 과학 실험을 직접 체험해볼 수 있습니다. 또한, 정기적으로 열리는 특별 전시와 이벤트는 과학에 대한 흥미를 더욱 자극하는 기회를 제공합니다.",
+      "near_stations": [
+        {
+          "station": "오시리아역",
+          "distance": 957
+        }
+      ],
+      "image_url": "https://www.visitbusan.net/uploadImgs/files/cntnts/20230901132543063",
+      "activities": [
+        "전시 관람",
+        "과학 실험 체험",
+        "워크숍 참여"
+      ]
+    },
+    {
+      "name": "죽성드림세트장",
+      "latitude": 35.2409662,
+      "longitude": 129.2484991,
+      "description": "죽성드림세트장은 부산 기장군의 아름다운 해안가에 위치한 드라마 촬영지로, 특히 해안 절경과 함께 독특한 건축물이 어우러져 인상적인 풍경을 제공합니다. 이곳에서는 바다를 배경으로 한 사진 촬영이 인기가 많으며, 사진 동호회나 촬영을 즐기는 사람들에게 이상적인 장소입니다. 또한 주변의 해안 산책로를 따라 걷거나 자전거를 타며 여유로운 시간을 보낼 수 있어, 자연을 즐기는 취미를 가진 방문객들에게도 추천할 만한 곳입니다.",
+      "near_stations": [
+        {
+          "station": "기장역",
+          "distance": 2741
+        }
+      ],
+      "image_url": "http://tong.visitkorea.or.kr/cms/resource/85/2704685_image2_1.jpg",
+      "activities": [
+        "사진 촬영",
+        "해안 산책",
+        "자전거 타기"
+      ]
+    },
+    {
+      "name": "기장죽성리왜성",
+      "latitude": 35.2420137,
+      "longitude": 129.2416887,
+      "description": "기장죽성리왜성은 부산 기장군에 위치한 역사적인 유적지로, 일본의 임진왜란 시기에 축조된 성의 흔적을 볼 수 있는 곳입니다. 이곳은 역사에 관심이 많은 사람들에게 탐방과 사진 촬영의 기회를 제공하며, 성터 주변의 아름다운 자연 경관을 따라 하이킹이나 산책을 즐기기에 좋습니다. 또한, 인근에는 바다를 배경으로 한 멋진 풍경을 감상할 수 있는 장소들이 많아 사진 동호회나 자연을 사랑하는 사람들이 방문하기에 적합합니다.",
+      "near_stations": [
+        {
+          "station": "기장역",
+          "distance": 2113
+        }
+      ],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%EA%B8%B0%EC%9E%A5_%EC%A3%BD%EC%84%B1%EB%A6%AC%EC%99%9C%EC%84%B1.jpg",
+      "activities": [
+        "역사 탐방",
+        "사진 촬영",
+        "하이킹"
+      ]
+    },
+    {
+      "name": "기장 남산봉수대",
+      "latitude": 35.2341736,
+      "longitude": 129.2329295,
+      "description": "기장 남산봉수대는 부산 동해선 광역전철의 기장역 근처에 위치한 역사적인 장소로, 과거 봉화를 올리던 곳입니다. 이곳은 아름다운 자연 경관과 함께 역사적인 유적지를 탐방할 수 있어 하이킹이나 사진 촬영을 취미로 가진 사람들에게 매력적인 장소입니다. 또한, 인근에는 다양한 산책로가 있어 지역 동호회나 가족 단위 방문객들이 여유롭게 자연을 즐기기에 적합합니다.",
+      "near_stations": [
+        {
+          "station": "기장역",
+          "distance": 1699
+        }
+      ],
+      "image_url": "https://busan.grandculture.net/ImageView.aspx?fi=GC042P01396&t=middle&ext=jpg&iwm=1",
+      "activities": [
+        "하이킹",
+        "사진 촬영",
+        "역사 탐방"
+      ]
+    },
+    {
+      "name": "일광해수욕장",
+      "latitude": 35.2597783,
+      "longitude": 129.2339709,
+      "description": "일광해수욕장은 부산의 동해선 광역전철 일광역 근처에 위치한 아름다운 해변입니다. 이곳에서는 수영과 일광욕을 즐길 수 있으며, 서핑 동호회나 낚시를 취미로 하는 사람들에게도 최적의 장소입니다. 또한, 해변을 따라 펼쳐진 산책로는 조깅이나 자전거 타기에 적합하여 다양한 야외 활동을 즐길 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "일광역",
+          "distance": 656
+        }
+      ],
+      "image_url": "https://www.visitbusan.net/uploadImgs/files/cntnts/20191225143403439_wufrotr",
+      "activities": [
+        "수영",
+        "일광욕",
+        "서핑"
+      ]
+    },
+    {
+      "name": "갈맷길",
+      "latitude": 35.2619513,
+      "longitude": 129.2333855,
+      "description": "갈맷길은 부산의 아름다운 해안 경관을 따라 걷기 좋은 트레일로, 일광역 근처에서 시작하여 다양한 코스를 제공합니다. 이곳에서는 등산이나 트레킹 동호회가 자연을 만끽하며 걷기에 좋고, 사진 촬영을 취미로 하는 사람들에게도 멋진 풍경을 제공합니다. 또한, 바다를 배경으로 한 피크닉이나 조깅 등 다양한 야외 활동을 즐길 수 있는 매력적인 장소입니다.",
+      "near_stations": [
+        {
+          "station": "일광역",
+          "distance": 413
+        }
+      ],
+      "image_url": "https://www.busan.go.kr/comm/getImage?srvcId=BANNER&upperNo=4773&fileTy=PCIMG&fileNo=1",
+      "activities": [
+        "걷기",
+        "사진 촬영",
+        "피크닉"
+      ]
+    },
+    {
+      "name": "일광이천생태공원",
+      "latitude": 35.2714082,
+      "longitude": 129.2349657,
+      "description": "일광이천생태공원은 부산의 동해선 광역전철 일광역 인근에 위치한 자연 친화적인 공간입니다. 이 공원은 다양한 식물과 생태계를 관찰할 수 있는 산책로가 잘 조성되어 있어 자연을 사랑하는 사람들이나 사진 동호회 회원들이 방문하기에 좋습니다. 또한 자전거 도로와 피크닉 공간도 갖추고 있어 가족이나 친구들과 함께 여유로운 시간을 보내기에 안성맞춤입니다.",
+      "near_stations": [
+        {
+          "station": "일광역",
+          "distance": 654
+        }
+      ],
+      "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMjA5MDlfMjcg/MDAxNjYyNjkwNTA2NjYx.0ziHdeEOrggW15JtBG_R1xZv0wUhOamz-i5gy73sN2gg.y3wzU4iYthHZFjJgHrIrE_7lB__u20SXjuyWQ8LYVTYg.JPEG.hs486mh/1662690504229.jpg?type=w800",
+      "activities": [
+        "산책",
+        "자전거 타기",
+        "피크닉"
+      ]
+    },
+    {
+      "name": "임랑해수욕장",
+      "latitude": 35.3184861,
+      "longitude": 129.2643145,
+      "description": "임랑해수욕장은 부산의 동해안에 위치한 아름다운 해변으로, 맑고 깨끗한 바다와 고운 백사장이 매력적입니다. 서핑이나 스탠드업 패들보드(SUP)와 같은 해양 스포츠를 즐기기에 최적의 장소이며, 해변가 산책로에서는 조깅이나 자전거 타기를 즐길 수 있습니다. 또한, 인근의 자연 경관을 감상하며 사진 촬영이나 피크닉을 즐기기에도 좋은 환경을 제공합니다.",
+      "near_stations": [
+        {
+          "station": "월내역",
+          "distance": 1563
+        }
+      ],
+      "image_url": "https://www.visitbusan.net/uploadImgs/files/cntnts/20191224093810316_oen",
+      "activities": [
+        "서핑",
+        "조깅",
+        "사진 촬영"
+      ]
+    },
+    {
+      "name": "청광식물원",
+      "latitude": 35.3031533,
+      "longitude": 129.2346595,
+      "description": "청광식물원은 부산 동해선 광역전철의 좌천역 근처에 위치한 자연 친화적인 공간으로, 다양한 식물과 아름다운 정원을 감상할 수 있는 곳입니다. 식물 관찰과 사진 촬영을 즐기는 사람들에게 이상적인 장소이며, 주말에는 원예 동호회나 자연 탐방 모임이 자주 열려 취미 활동을 위한 좋은 기회를 제공합니다. 또한, 계절별로 열리는 특별 전시나 워크숍에 참여하여 식물에 대한 지식을 넓힐 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "좌천역",
+          "distance": 1316
+        }
+      ],
+      "image_url": "http://farm9.staticflickr.com/8247/8650310085_c33ee46ab0.jpg",
+      "activities": [
+        "식물 관찰",
+        "사진 촬영",
+        "워크숍 참여"
+      ]
+    },
+    {
+      "name": "월내수변공원",
+      "latitude": 35.3262195,
+      "longitude": 129.2795982,
+      "description": "월내수변공원은 부산 동해선 광역전철의 월내역 인근에 위치한 아름다운 자연 공간입니다. 이곳은 조용한 호숫가를 따라 산책이나 자전거 타기를 즐기기에 이상적이며, 낚시 동호회 회원들이 함께 모여 낚시를 즐길 수 있는 장소로도 유명합니다. 또한, 공원 내에 마련된 피크닉 구역에서 가족이나 친구들과 함께 여유로운 시간을 보낼 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "월내역",
+          "distance": 334
+        }
+      ],
+      "image_url": "https://mblogthumb-phinf.pstatic.net/MjAxOTA2MTZfNSAg/MDAxNTYwNjg4ODU3MDc1.VynCvRkqCwFhQkIzWCeXvuwF5bmN2A5GOqT8mi2NyI8g.DP1Bhwb4jzTCNkD8aZMG3MmseKjLh1eqhXHY-SEJ6rEg.PNG.y0207y/image.png?type=w800",
+      "activities": [
+        "산책",
+        "자전거 타기",
+        "낚시"
+      ]
+    },
+    {
+      "name": "고리원자력홍보관",
+      "latitude": 35.3292125,
+      "longitude": 129.2877015,
+      "description": "고리원자력홍보관은 부산 동해선 광역전철의 월내역 근처에 위치한 교육 및 체험 공간으로, 원자력 발전에 대한 다양한 정보를 제공합니다. 방문객들은 원자력의 원리와 안전성에 대한 전시를 관람하고, 다양한 인터랙티브 체험을 통해 원자력 기술을 이해할 수 있습니다. 과학 동호회나 에너지 관련 취미를 가진 사람들은 이곳에서 심도 깊은 지식을 얻고, 새로운 관점을 배울 수 있는 기회를 가질 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "월내역",
+          "distance": 996
+        }
+      ],
+      "image_url": "http://bbkk.kr/d/t/34/3466_%EB%A9%94%EC%9D%B8%EC%82%AC%EC%A7%84.jpg",
+      "activities": [
+        "전시 관람",
+        "인터랙티브 체험",
+        "교육 프로그램 참여"
+      ]
+    },
+    {
+      "name": "월내항",
+      "latitude": 35.3256921,
+      "longitude": 129.2784701,
+      "description": "월내항은 부산 동해선 광역전철의 월내역 근처에 위치한 작은 항구로, 조용하고 아늑한 분위기를 자랑합니다. 이곳에서는 주로 낚시를 즐기는 사람들이 모이며, 아름다운 해안선을 따라 산책하거나 사진 촬영을 하기에도 적합한 장소입니다. 또한, 인근에는 해산물을 맛볼 수 있는 식당들이 있어 바다를 배경으로 신선한 음식을 즐길 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "월내역",
+          "distance": 315
+        }
+      ],
+      "image_url": "https://busan.grandculture.net/ImageView.aspx?fi=GC042P03968&t=middle&ext=jpg&iwm=1",
+      "activities": [
+        "낚시",
+        "산책",
+        "사진 촬영"
+      ]
+    },
+    {
+      "name": "외고산 옹기마을",
+      "latitude": 35.4339482,
+      "longitude": 129.2793964,
+      "description": "외고산 옹기마을은 한국 전통 옹기를 제작하고 체험할 수 있는 곳으로, 부산 동해선 광역전철의 남창역 근처에 위치해 있습니다. 이 마을에서는 전통 옹기 제작 과정을 직접 체험해 볼 수 있으며, 옹기 공예품을 구경하고 구매할 수 있는 기회도 제공합니다. 도예 동호회나 전통 공예에 관심이 있는 사람들에게는 특별한 배움과 즐거움을 제공하는 장소입니다.",
+      "near_stations": [
+        {
+          "station": "남창역",
+          "distance": 1725
+        }
+      ],
+      "image_url": "https://image.mycelebs.com/travel/new/ho/392799_ho_1499093604.jpg",
+      "activities": [
+        "전통 공예 체험",
+        "전통 공예 관람",
+        "사진 촬영"
+      ]
+    },
+    {
+      "name": "울주민속박물관",
+      "latitude": 35.4363284,
+      "longitude": 129.280962,
+      "description": "울주민속박물관은 부산 동해선 광역전철의 남창역 근처에 위치한 문화 공간으로, 울산 지역의 전통 민속 문화를 체험할 수 있는 곳입니다. 이곳에서는 다양한 전시와 체험 프로그램이 마련되어 있어 전통 공예, 민속 놀이 등을 직접 경험할 수 있습니다. 또한, 역사와 전통에 관심 있는 동호회나 취미 모임이 방문하여 민속문화에 대한 깊이 있는 탐구와 토론을 즐기기에 적합한 장소입니다.",
+      "near_stations": [
+        {
+          "station": "남창역",
+          "distance": 1971
+        }
+      ],
+      "image_url": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdIsvRA%2FbtrXaBvW7oN%2FjYKlmcXPs0s5jRZAEGKF90%2Fimg.jpg",
+      "activities": [
+        "전통 공예 체험",
+        "민속 놀이 체험",
+        "전시 관람"
+      ]
+    },
+    {
+      "name": "회야호",
+      "latitude": 35.46777603184192,
+      "longitude": 129.2742310775004,
+      "description": "회야호는 부산 동해선 광역전철의 망양역 근처에 위치한 아름다운 호수로, 자연 속에서 여유로운 시간을 보낼 수 있는 장소입니다. 이곳에서는 호수 주변을 따라 조성된 산책로를 걸으며 조깅이나 산책을 즐길 수 있으며, 자연 경관을 배경으로 사진을 찍기에 좋습니다. 또한, 낚시 동호회나 자연 관찰 동호회 회원들이 모여 활동하기에도 적합한 장소로, 다양한 야외 활동을 통해 자연과 교감할 수 있는 기회를 제공합니다.",
+      "near_stations": [
+        {
+          "station": "망양역",
+          "distance": 1757
+        }
+      ],
+      "image_url": "https://ojsfile.ohmynews.com/STD_IMG_FILE/2019/0724/IE002526305_STD.JPG",
+      "activities": [
+        "산책",
+        "조깅",
+        "낚시"
+      ]
+    },
+    {
+      "name": "선암호수공원",
+      "latitude": 35.5168527,
+      "longitude": 129.3262754,
+      "description": "선암호수공원은 부산 동해선 광역전철의 개운포역 인근에 위치한 아름다운 공원입니다. 이곳은 호수를 중심으로 산책로가 잘 조성되어 있어 조깅이나 산책을 즐기기에 안성맞춤입니다. 또한, 공원 내에는 다양한 운동 시설과 피크닉 장소가 마련되어 있어 동호회 활동이나 가족 단위의 나들이에도 적합합니다.",
+      "near_stations": [
+        {
+          "station": "개운포역",
+          "distance": 1075
+        }
+      ],
+      "image_url": "http://tong.visitkorea.or.kr/cms/resource/16/2662716_image2_1.bmp",
+      "activities": [
+        "조깅",
+        "산책",
+        "피크닉"
+      ]
+    },
+    {
+      "name": "울산대공원",
+      "latitude": 35.530972,
+      "longitude": 129.2939697,
+      "description": "울산대공원은 울산광역시에 위치한 대규모 공원으로, 자연을 만끽하며 다양한 레크리에이션 활동을 즐길 수 있는 장소입니다. 이 공원은 산책로와 자전거 도로가 잘 정비되어 있어 걷기나 자전거 타기를 즐기는 사람들에게 인기가 많으며, 넓은 잔디밭에서는 피크닉이나 프리스비 같은 야외 활동도 가능합니다. 또한, 계절별로 아름다운 꽃과 나무를 감상할 수 있어 사진 촬영을 즐기는 동호인들에게도 매력적인 장소입니다.",
+      "near_stations": [
+        {
+          "station": "개운포역",
+          "distance": 3586
+        }
+      ],
+      "image_url": "https://www.uic.or.kr/images/ulsanpark/intro/park_comment_img1.jpg",
+      "activities": [
+        "걷기",
+        "자전거 타기",
+        "피크닉"
+      ]
+    },
+    {
+      "name": "태화강 국가정원",
+      "latitude": 35.54777,
+      "longitude": 129.2962236,
+      "description": "태화강 국가정원은 울산에 위치한 아름다운 정원으로, 다양한 식물과 생태 환경을 즐길 수 있는 공간입니다. 이곳에서는 산책이나 자전거 타기 같은 야외 활동을 즐길 수 있으며, 사진 동호회 회원들이 아름다운 풍경을 배경으로 멋진 사진을 찍기에 좋은 장소입니다. 또한, 정원 내에는 계절별로 다양한 축제와 행사가 열려 방문객들에게 다채로운 경험을 제공합니다.",
+      "near_stations": [
+        {
+          "station": "개운포역",
+          "distance": 4994
+        },
+        {
+          "station": "태화강역",
+          "distance": 5291
+        }
+      ],
+      "image_url": "https://img4.yna.co.kr/etc/inner/KR/2023/07/12/AKR20230712052800805_03_i_P4.jpg",
+      "activities": [
+        "산책",
+        "자전거 타기",
+        "사진 촬영"
+      ]
+    },
+    {
+      "name": "명촌 갈대밭",
+      "latitude": 35.5486803,
+      "longitude": 129.3568937,
+      "description": "명촌 갈대밭은 부산 동해선 광역전철의 개운포역 근처에 위치한 아름다운 자연 공간으로, 갈대밭이 펼쳐져 있어 산책이나 조깅을 즐기기에 안성맞춤입니다. 이곳은 사진 촬영을 좋아하는 사람들에게도 인기 있는 장소로, 계절에 따라 변하는 자연의 색채와 풍경을 담기에 좋습니다. 또한, 조용한 환경 속에서 독서를 하거나, 피크닉을 즐기기에도 적합하여 다양한 동호회나 취미 모임이 열리기에 좋은 장소입니다.",
+      "near_stations": [
+        {
+          "station": "태화강역",
+          "distance": 1069
+        }
+      ],
+      "image_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=944321395614471",
+      "activities": [
+        "산책",
+        "사진 촬영",
+        "피크닉"
+      ]
+    },
+    {
+      "name": "태화루",
+      "latitude": 37.5609648,
+      "longitude": 127.0011205,
+      "description": "태화루는 부산 동해선 광역전철의 개운포역 근처에 위치한 아름다운 장소로, 전통 건축물과 자연 경관이 조화를 이루고 있습니다. 이곳에서는 사진 동호회 회원들이 건축물과 주변 풍경을 배경으로 촬영을 즐기기에 좋으며, 조용한 환경에서 독서나 명상을 하며 휴식을 취할 수 있습니다. 또한, 산책로가 잘 조성되어 있어 걷기나 조깅을 즐기는 사람들에게도 적합한 장소입니다.",
+      "near_stations": [
+        {
+          "station": "태화강역",
+          "distance": 307702
+        },
+        {
+          "station": "개운포역",
+          "distance": 308362
+        }
+      ],
+      "image_url": "http://www.bbsj.kr/data/tour/1230/2108794035_E30eTHFI_0114547539f231a1a89457c37a94b9739cbc9ca3.jpg",
+      "activities": [
+        "사진 촬영",
+        "독서",
+        "산책"
+      ]
+    },
+    {
+      "name": "태화강동굴피아",
+      "latitude": 35.5449258,
+      "longitude": 129.3021944,
+      "description": "태화강동굴피아는 부산 동해선 광역전철의 개운포역 인근에 위치한 독특한 문화 공간입니다. 이곳은 자연 동굴을 활용하여 다양한 예술 전시와 공연이 열리며, 특히 사진 촬영 동호회나 예술 애호가들이 즐길 수 있는 독특한 배경을 제공합니다. 또, 시원한 동굴 내부에서의 산책은 더운 여름철에 특히 매력적입니다.",
+      "near_stations": [
+        {
+          "station": "개운포역",
+          "distance": 4476
+        },
+        {
+          "station": "태화강역",
+          "distance": 4708
+        }
+      ],
+      "image_url": "https://www.uncmc.or.kr/nam_images/facilities/donggul_01.jpg",
+      "activities": [
+        "예술 전시 관람",
+        "사진 촬영",
+        "동굴 산책"
+      ]
+    },
+    {
+      "name": "태화강 국가정원",
+      "latitude": 35.54777,
+      "longitude": 129.2962236,
+      "description": "태화강 국가정원은 울산 태화강역 인근에 위치한 아름다운 자연 공간으로, 다양한 테마 정원과 생태 보존 지역을 자랑합니다. 이곳에서는 산책이나 조깅을 즐기며 자연을 만끽할 수 있고, 자전거 동호회원들을 위한 자전거 도로도 잘 조성되어 있어 라이딩을 즐기기에 좋습니다. 또한, 사진 촬영을 취미로 하는 사람들에게는 사계절마다 변하는 꽃과 나무의 아름다움을 담을 수 있는 최적의 장소입니다.",
+      "near_stations": [
+        {
+          "station": "개운포역",
+          "distance": 4994
+        },
+        {
+          "station": "태화강역",
+          "distance": 5291
+        }
+      ],
+      "image_url": "https://img4.yna.co.kr/etc/inner/KR/2023/07/12/AKR20230712052800805_03_i_P4.jpg",
+      "activities": [
+        "산책",
+        "자전거 타기",
+        "사진 촬영"
+      ]
+    },
+    {
+      "name": "명촌 갈대밭",
+      "latitude": 35.5486803,
+      "longitude": 129.3568937,
+      "description": "명촌 갈대밭은 울산 태화강역 인근에 위치한 아름다운 자연 명소로, 광활한 갈대밭이 장관을 이루는 곳입니다. 이곳에서는 산책이나 사진 촬영을 즐기기에 좋으며, 특히 가을철에는 황금빛으로 물든 갈대밭을 배경으로 한 사진 촬영이 인기를 끕니다. 또한, 조류 관찰 동호회나 자연을 사랑하는 사람들에게는 다양한 새들과 자연 생태계를 접할 수 있는 흥미로운 장소입니다.",
+      "near_stations": [
+        {
+          "station": "태화강역",
+          "distance": 1069
+        }
+      ],
+      "image_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=944321395614471",
+      "activities": [
+        "산책",
+        "사진 촬영",
+        "조류 관찰"
+      ]
+    },
+    {
+      "name": "태화루",
+      "latitude": 37.5609648,
+      "longitude": 127.0011205,
+      "description": "태화루는 울산에 위치한 태화강역 근처에 자리잡고 있는 아름다운 전통 건축물로, 역사적 가치와 자연 경관을 동시에 즐길 수 있는 명소입니다. 이곳에서는 강변을 따라 산책하거나 사진 촬영을 즐길 수 있으며, 특히 봄철에는 주변의 벚꽃이 만개하여 많은 사람들이 찾는 인기 있는 장소입니다. 또한, 인근 지역에서는 조깅이나 자전거 타기 등 야외 활동을 즐기기에 적합하여 동호회나 취미 활동을 위한 모임 장소로도 인기가 있습니다.",
+      "near_stations": [
+        {
+          "station": "태화강역",
+          "distance": 307702
+        },
+        {
+          "station": "개운포역",
+          "distance": 308362
+        }
+      ],
+      "image_url": "http://www.bbsj.kr/data/tour/1230/2108794035_E30eTHFI_0114547539f231a1a89457c37a94b9739cbc9ca3.jpg",
+      "activities": [
+        "산책",
+        "사진 촬영",
+        "자전거 타기"
+      ]
+    },
+    {
+      "name": "태화강동굴피아",
+      "latitude": 35.5449258,
+      "longitude": 129.3021944,
+      "description": "'태화강동굴피아'는 부산 동해선 광역전철의 태화강역에 위치한 독특한 체험 공간입니다. 이곳은 자연적으로 형성된 동굴을 활용하여 다양한 전시와 체험 프로그램을 제공하며, 특히 사진 촬영이나 탐험에 관심이 있는 동호회 회원들에게 인기 있는 장소입니다. 방문객들은 동굴 내부를 탐험하며 아름다운 지형을 감상할 수 있고, 다양한 테마의 전시를 통해 문화와 예술을 즐길 수 있습니다.",
+      "near_stations": [
+        {
+          "station": "개운포역",
+          "distance": 4476
+        },
+        {
+          "station": "태화강역",
+          "distance": 4708
+        }
+      ],
+      "image_url": "https://www.uncmc.or.kr/nam_images/facilities/donggul_01.jpg",
+      "activities": [
+        "동굴 탐험",
+        "사진 촬영",
+        "전시 관람"
+      ]
+    }
+  ]
+}

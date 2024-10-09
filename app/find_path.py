@@ -1,6 +1,9 @@
 import json
 import math
+import os
 
+
+# 거리 계산
 def calculate_distance(lat1, lon1, lat2, lon2):
     R = 6371000  # 지구의 반경 (미터)
     lat1_rad = math.radians(lat1)
@@ -14,8 +17,12 @@ def calculate_distance(lat1, lon1, lat2, lon2):
     distance = R * c
     return round(distance)
 
+
+# 거리가 가장 가까운 역 찾기
 def find_nearest_station(lat, lon):
-    with open('station_activity.json', 'r', encoding='utf-8') as f:
+    file_path = os.path.join(os.path.dirname(__file__), 'data/station_activity.json')
+
+    with open(file_path, 'r', encoding='utf-8') as f:
         data = json.load(f) 
 
     stations = data['stations']

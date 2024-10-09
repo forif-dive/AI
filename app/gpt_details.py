@@ -7,9 +7,14 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def load_attractions(file_path='attractions_with_activities.json'):
+
+# 주요 관광지 정보 불러오기
+def load_attractions():
+    file_path = os.path.join(os.path.dirname(__file__), 'data/attractions_with_activities.json')
+
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)['attractions']
+
 
 def get_attraction_details(name):
     attractions = load_attractions()
@@ -18,6 +23,8 @@ def get_attraction_details(name):
         return None
     return attraction
 
+
+# 주요 관광지 설명 생성하기
 def generate_detailed_description(attraction):
     prompt = f"""
     제공된 장소에 대한 상세한 설명을 생성해주세요. 다음 정보를 바탕으로 흥미롭고 유익한 내용을 작성해주세요:
@@ -54,13 +61,15 @@ def generate_detailed_description(attraction):
 
     return json.loads(completion.choices[0].message.content)
 
+
+# 주요 관광지 정보 json 형식으로 반환
 def get_gpt_details(name):
     attraction = get_attraction_details(name)
     if not attraction:
         return None
-    
+
     gpt_details = generate_detailed_description(attraction)
-    
+
     return {
         "name": attraction['name'],
         "basic_info": {

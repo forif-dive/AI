@@ -1,23 +1,30 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import near_activity_recommend
-import json, find_path
+import json
+import find_path
 import greetings_recommendation
-import gpt_details, gpt_chat
+import gpt_details
+import gpt_chat
+import os
+import fatch_file
 app = FastAPI()
-with open('attractions_with_activities.json', 'r', encoding='utf-8') as f:
-    attractions_data = json.load(f)
-    
+file_path = os.path.join(os.path.dirname(__file__), 'data/attractions_with_activities.json')
+
+
 class UserInput(BaseModel):
     latitude: float
     longitude: float
     preferences: list[str]
 
+
 class LocationInput(BaseModel):
     latitude: float
     longitude: float
 
-@app.post("/find_nearest_station")
+
+# 근처 역 가져오기
+@app.post("/stations/nearest")
 async def find_nearest_station(location: LocationInput):
     try:
         nearest_station, distance = find_path.find_nearest_station(
@@ -33,10 +40,13 @@ async def find_nearest_station(location: LocationInput):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
 class StationRequest(BaseModel):
     station_name: str
 
-@app.post("/find_near_activity")
+
+# 근처 관광지 가져오기
+@app.post("/activities/nearby")
 async def find_near_activity(user_input: UserInput):
     try:
         result_json = near_activity_recommend.find_activity(
@@ -57,10 +67,12 @@ async def find_near_activity(user_input: UserInput):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-with open('attractions_with_activities.json', 'r', encoding='utf-8') as f:
+with open(file_path, 'r', encoding='utf-8') as f:
     attractions_data = json.load(f)
 
-@app.post("/get_attractions_by_station")
+
+# 해당 역의 관광지들 가져오기
+@app.post("/stations/attractions")
 async def get_attractions_by_station(request: StationRequest):
     station_name = request.station_name
     matching_attractions = []
@@ -83,17 +95,24 @@ async def get_attractions_by_station(request: StationRequest):
 
     return {"attractions": matching_attractions}
 
+
+# 관광지 카테고리 가져오기
 @app.get("/categories")
 async def get_categories():
-    with open("activity_category.json", "r", encoding="utf-8") as file:
+    category_data_path = os.path.join(os.path.dirname(__file__), 'data/activity_category.json')
+
+    with open(category_data_path, "r", encoding="utf-8") as file:
         categories = json.load(file)
     return categories
+
 
 class UserGreetingInput(BaseModel):
     latitude: float
     longitude: float
     preferences: list[str]
-    
+
+
+# 사용자의 위치에 따른 추천 관광지 가져오기
 @app.post("/greetings")
 async def greetings(user_input: UserGreetingInput):
     try:
@@ -113,35 +132,70 @@ async def greetings(user_input: UserGreetingInput):
 
 class DetailsRequest(BaseModel):
     name: str
-    
-@app.post("/details")
+
+
+# 관광지 세부 정보 가져오기
+@app.post("/attractions/details")
 async def get_details(request: DetailsRequest):
     details = gpt_details.get_gpt_details(request.name)
     if not details:
         raise HTTPException(status_code=404, detail="Attraction not found")
     return details
+
+
 class ChatInput(BaseModel):
     previous_chat: list
     preferences: list[str]
     latitude: float
     longitude: float
 
+
 @app.post("/chat")
 async def chat_endpoint(chat_input: ChatInput):
     try:
-        with open('attractions_with_activities.json', 'r', encoding='utf-8') as f:
-            attractions_data = json.load(f)['attractions']
+        with open(file_path, 'r', encoding='utf-8') as f:
+            attractions_chat_data = json.load(f)['attractions']
         
         response = gpt_chat.process_chat(
             chat_input.previous_chat,
             chat_input.preferences,
             chat_input.latitude,
             chat_input.longitude,
-            attractions_data
+            attractions_chat_data
         )
         return {"response": response}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+# 요청 바디 모델
+class SearchRequest(BaseModel):
+    query: str  # 검색할 쿼리 (예: 부산 동해선 일광역 주요 관광지)
+    location: str  # 위치 (예: 부산 동해선 일광역)
+
+
+# POST 요청을 처리하는 엔드포인트
+@app.post("/search")
+async def search_data(request: SearchRequest):
+    try:
+        # Google Custom Search API에서 데이터 가져오기
+        google_data = fatch_file.fetch_google_custom_search(request.query)
+        if 'error' in google_data:
+            raise HTTPException(status_code=500, detail=google_data['error'])
+
+        # Google Maps API에서 데이터 가져오기
+        map_data = fatch_file.fetch_map_data(request.location)
+        if 'error' in map_data:
+            raise HTTPException(status_code=500, detail=map_data['error'])
+
+        # 결과 반환
+        return {
+            "google_search_results": google_data,
+            "map_results": map_data
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 
 if __name__ == "__main__":
     import uvicorn

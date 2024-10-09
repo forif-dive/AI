@@ -8,10 +8,15 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def load_attractions(file_path='attractions_with_activities.json'):
+
+def load_attractions():
+    file_path = os.path.join(os.path.dirname(__file__), 'data/attractions_with_activities.json')
+
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)['attractions']
 
+
+# 인삿말 출력, 장소 추천하기
 def get_greeting_and_recommendations(user_latitude, user_longitude, preferences: list[str]):
     attractions = load_attractions()
     
@@ -97,6 +102,7 @@ def get_greeting_and_recommendations(user_latitude, user_longitude, preferences:
     ]
     
     return response
+
 
 # 테스트 용도의 메인 실행 부분
 if __name__ == "__main__":

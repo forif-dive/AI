@@ -7,7 +7,7 @@ import greetings_recommendation
 import gpt_details
 import gpt_chat
 import os
-import fatch_file
+import fetch_file
 app = FastAPI()
 file_path = os.path.join(os.path.dirname(__file__), 'data/attractions_with_activities.json')
 
@@ -179,12 +179,12 @@ class SearchRequest(BaseModel):
 async def search_data(request: SearchRequest):
     try:
         # Google Custom Search API에서 데이터 가져오기
-        google_data = fatch_file.fetch_google_custom_search(request.query)
+        google_data = fetch_file.fetch_google_custom_search(request.query)
         if 'error' in google_data:
             raise HTTPException(status_code=500, detail=google_data['error'])
 
         # Google Maps API에서 데이터 가져오기
-        map_data = fatch_file.fetch_map_data(request.location)
+        map_data = fetch_file.fetch_map_data(request.location)
         if 'error' in map_data:
             raise HTTPException(status_code=500, detail=map_data['error'])
 

@@ -8,6 +8,8 @@ import gpt_details
 import gpt_chat
 import os
 import fetch_file
+import asyncio
+import re
 app = FastAPI()
 file_path = os.path.join(os.path.dirname(__file__), 'data/attractions_with_activities.json')
 
@@ -56,11 +58,11 @@ async def find_near_activity(user_input: UserInput):
         )
         # JSON 문자열을 Python 딕셔너리로 파싱
         result_dict = json.loads(result_json)
-        
+
         # 오류 확인
         if "error" in result_dict:
             raise HTTPException(status_code=400, detail=result_dict["error"])
-        
+
         return result_dict
     except json.JSONDecodeError:
         raise HTTPException(status_code=500, detail="Invalid JSON response from recommendation service")
@@ -155,7 +157,7 @@ async def chat_endpoint(chat_input: ChatInput):
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             attractions_chat_data = json.load(f)['attractions']
-        
+
         response = gpt_chat.process_chat(
             chat_input.previous_chat,
             chat_input.preferences,
@@ -183,16 +185,40 @@ async def search_data(request: SearchRequest):
         if 'error' in google_data:
             raise HTTPException(status_code=500, detail=google_data['error'])
 
+        # 크롤링 결과를 저장할 리스트
+        crawled_results = []
+
+        for result in google_data:
+            url = result['link']
+            crawled_data = fetch_file.crawl_korean_page(url)
+
+            crawled_results.append({
+                "title": result['title'],
+                "url": url,
+                "meta_description": crawled_data['meta_description'],
+                "body_text": crawled_data['body_text']
+            })
+
         # Google Maps API에서 데이터 가져오기
         map_data = fetch_file.fetch_map_data(request.location)
         if 'error' in map_data:
             raise HTTPException(status_code=500, detail=map_data['error'])
 
+        # GPT 요청 결과를 저장할 리스트
+        gpt_responses = []
+
+        for crawled_result in crawled_results:
+            # 각각의 크롤링된 결과와 지도 데이터를 사용해 GPT에 요청
+            gpt_response = gpt_details.get_gpt_response_from_search_data([crawled_result], map_data)
+            gpt_responses.append(gpt_response)
+        # 저장할 JSON 파일 경로
+        data_file_path = os.path.join(os.path.dirname(__file__), 'data/updated_attractions.json')
+
+        with open(data_file_path, 'w', encoding='utf-8') as f:
+            json.dump(gpt_responses, f, ensure_ascii=False, indent=4)
         # 결과 반환
-        return {
-            "google_search_results": google_data,
-            "map_results": map_data
-        }
+        return {"results": gpt_responses}
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -200,3 +226,4 @@ async def search_data(request: SearchRequest):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+

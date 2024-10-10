@@ -82,3 +82,49 @@ def get_gpt_details(name):
         },
         "gpt_details": gpt_details
     }
+
+
+def get_gpt_response_from_search_data(google_search_results, map_results):
+    prompt = f"""
+구글 검색 결과와 지도 정보를 받았습니다. 다음과 같은 내용이 들어가도록 정리해주세요:
+1. 역 이름
+2. 관광지 이름
+3. 위도
+4. 경도
+5. 주요 관광지 설명
+
+
+다음은 검색 결과와 지도 데이터입니다:
+
+구글 검색 결과:
+{google_search_results}
+
+지도 결과:
+{map_results}
+
+    {{
+        "station_name": str,
+        "attraction_name": str,
+        "latitude": float,
+        "longitude": float,
+        "description": str
+    }}
+    한 역마다 이런 형식이면 되고, 응답은 한글로 되어있어야 합니다. 위 형태처럼 Json으로 반환해야합니다.
+    """
+    completion = client.chat.completions.create(
+        model="gpt-4o-2024-08-06",
+        messages=[
+            {"role": "system", "content": "당신은 여행 전문가이자 로컬 가이드입니다. 방문객들에게 유용하고 흥미로운 정보를 제공해주세요."},
+            {"role": "user", "content": prompt}
+        ]
+    )
+    response_content = completion.choices[0].message.content
+    try:
+        parsed_json = json.loads(response_content)
+        pretty_response = json.dumps(parsed_json, indent=4, ensure_ascii=False)
+    except json.JSONDecodeError:
+        # JSON이 아닌 경우 원본 텍스트 그대로 반환
+        pretty_response = response_content
+
+    return pretty_response
+

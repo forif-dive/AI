@@ -61,13 +61,14 @@ uvicorn main:app --reload
 
 ## API 엔드포인트
 
-- POST `/find_nearest_station`: 가장 가까운 역 찾기
-- POST `/find_near_activity`: 주변 관광 활동 추천
-- POST `/get_attractions_by_station`: 특정 역 주변의 관광 명소 조회
+- POST `/stations/nearest`: 가장 가까운 역 찾기
+- POST `/activities/nearby`: 주변 관광 활동 추천
+- POST `/stations/attractions`: 특정 역 주변의 관광 명소 조회
 - GET `/categories`: 관광 활동 카테고리 목록 조회
 - POST `/greetings`: 맞춤형 인사말과 추천 생성
-- POST `/details`: 특정 관광 명소의 상세 정보 조회
-
+- POST `/attractions/details`: 특정 관광 명소의 상세 정보 조회
+- POST `/search`: 특정 관광 명소의 상세 정보 검색 및 크롤링
+- 
 각 엔드포인트의 자세한 사용법은 FastAPI의 자동 생성 문서 (`/docs`)를 참조하세요.
 
 ## 데이터 구조 및 흐름

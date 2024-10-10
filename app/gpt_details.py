@@ -7,9 +7,14 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def load_attractions(file_path='attractions_with_activities.json'):
+
+# 주요 관광지 정보 불러오기
+def load_attractions():
+    file_path = os.path.join(os.path.dirname(__file__), 'data/attractions_with_activities.json')
+
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)['attractions']
+
 
 def get_attraction_details(name):
     attractions = load_attractions()
@@ -18,6 +23,8 @@ def get_attraction_details(name):
         return None
     return attraction
 
+
+# 주요 관광지 설명 생성하기
 def generate_detailed_description(attraction):
     prompt = f"""
     제공된 장소에 대한 상세한 설명을 생성해주세요. 다음 정보를 바탕으로 흥미롭고 유익한 내용을 작성해주세요:
@@ -54,13 +61,15 @@ def generate_detailed_description(attraction):
 
     return json.loads(completion.choices[0].message.content)
 
+
+# 주요 관광지 정보 json 형식으로 반환
 def get_gpt_details(name):
     attraction = get_attraction_details(name)
     if not attraction:
         return None
-    
+
     gpt_details = generate_detailed_description(attraction)
-    
+
     return {
         "name": attraction['name'],
         "basic_info": {
@@ -73,3 +82,49 @@ def get_gpt_details(name):
         },
         "gpt_details": gpt_details
     }
+
+
+def get_gpt_response_from_search_data(google_search_results, map_results):
+    prompt = f"""
+구글 검색 결과와 지도 정보를 받았습니다. 다음과 같은 내용이 들어가도록 정리해주세요:
+1. 역 이름
+2. 관광지 이름
+3. 위도
+4. 경도
+5. 주요 관광지 설명
+
+
+다음은 검색 결과와 지도 데이터입니다:
+
+구글 검색 결과:
+{google_search_results}
+
+지도 결과:
+{map_results}
+
+    {{
+        "station_name": str,
+        "attraction_name": str,
+        "latitude": float,
+        "longitude": float,
+        "description": str
+    }}
+    한 역마다 이런 형식이면 되고, 응답은 한글로 되어있어야 합니다. 위 형태처럼 Json으로 반환해야합니다.
+    """
+    completion = client.chat.completions.create(
+        model="gpt-4o-2024-08-06",
+        messages=[
+            {"role": "system", "content": "당신은 여행 전문가이자 로컬 가이드입니다. 방문객들에게 유용하고 흥미로운 정보를 제공해주세요."},
+            {"role": "user", "content": prompt}
+        ]
+    )
+    response_content = completion.choices[0].message.content
+    try:
+        parsed_json = json.loads(response_content)
+        pretty_response = json.dumps(parsed_json, indent=4, ensure_ascii=False)
+    except json.JSONDecodeError:
+        # JSON이 아닌 경우 원본 텍스트 그대로 반환
+        pretty_response = response_content
+
+    return pretty_response
+

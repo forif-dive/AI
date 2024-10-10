@@ -7,15 +7,18 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+
 def load_station_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
+
 
 def get_station_info(station_name, stations):
     for station in stations:
         if station['name'] == station_name:
             return station
     return None
+
 
 def get_station_info_json(station_name, preference, attractions):
     attractions_info = json.dumps(attractions, ensure_ascii=False)
@@ -54,6 +57,7 @@ def get_station_info_json(station_name, preference, attractions):
     )
     return completion.choices[0].message.content
 
+
 def process_recommendations(data, user_lat, user_lon):
     if isinstance(data, str):
         data = json.loads(data)
@@ -67,9 +71,12 @@ def process_recommendations(data, user_lat, user_lon):
         recommendation.pop('longitude', None)
     return data
 
+
 def find_activity(user_latitude, user_longitude, preferences):
     try:
-        station_data = load_station_data('station_activity.json')
+        file_path = os.path.join(os.path.dirname(__file__), 'data/station_activity.json')
+
+        station_data = load_station_data(file_path)
         stations = station_data['stations']
 
         nearest_station, distance = find_path.find_nearest_station(user_latitude, user_longitude)
